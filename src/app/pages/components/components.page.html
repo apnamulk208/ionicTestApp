@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Component
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <!-- ion-col -->
+      </ion-col>
+      <ion-col size="4">
+        <ion-badge color="secondary">22</ion-badge>
+        <ion-button expand="block">A block button</ion-button>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
+
+
+        <ion-list>
+          <ion-list-header>Checkbox</ion-list-header>
+          <ion-item>
+            <ion-checkbox [checked]="true" color="secondary" slot="start"></ion-checkbox>
+
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Start Date</ion-label>
+            <ion-datetime value="1990-02-19" placeholder="Select Date"></ion-datetime>
+          </ion-item>
+        </ion-list>
+
+        <ion-chip>
+          <ion-label color="secondary">Secondary Label</ion-label>
+        </ion-chip>
+
+        <ion-fab vertical="center" horizontal="start" slot="fixed">
+          <ion-fab-button>
+            <ion-icon name="share"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>
+
+
+      </ion-col>
+      <ion-col size="4">
+        <h1>
+          inputs
+        </h1>
+
+        <!-- Default Input -->
+        <ion-input></ion-input>
+
+        <!-- Input with value -->
+        <ion-input value="custom"></ion-input>
+
+        <!-- Input with placeholder -->
+        <ion-input placeholder="Enter Input"></ion-input>
+
+        <!-- Input with clear button when there is a value -->
+        <ion-input clearInput value="clear me"></ion-input>
+
+        <!-- Number type input -->
+        <ion-input type="number" value="333"></ion-input>
+
+        <!-- Disabled input -->
+        <ion-input value="Disabled" disabled></ion-input>
+
+        <!-- Readonly input -->
+        <ion-input value="Readonly" readonly></ion-input>
+
+        <!-- Inputs with labels -->
+        <ion-item>
+          <ion-label>Default Label</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Floating Label</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Fixed Label</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Stacked Label</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+</ion-content>
